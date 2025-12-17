@@ -11,5 +11,4 @@ public class LocationServiceImp implements LocationService {
     public LocationEntity createlocation(LocationEntity le){
         return locationrepo.save(le);
     }
-
 }
