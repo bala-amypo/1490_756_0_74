@@ -1,15 +1,15 @@
-package com.example.demo.service;
+package com.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.example.demo.Entity.LocationEntity;
-import com.example.demo.repository.LocationRepository;
+import com.example.demo.entity.LocationEntity;
 
-public class LocationServiceImp implements LocationService{
+public class LocationServiceImp implements LocationService {
     @Autowired
-    LocationRepository Locationrepo;
+    LocationRepository locationrepo;
     @Override
     public LocationEntity createlocation(LocationEntity le){
-        return Locationrepo.save(le);
+        return locationrepo.save(le);
     }
+
 }
