@@ -9,7 +9,7 @@ import com.example.demo.entity.LocationEntity;
 import com.example.demo.repository.LocationRepository;
 
 @Service
-public class LocationServiceImpl implements LocationService{
+public class LocationServiceImp implements LocationService{
     @Autowired
     LocationRepository locationrepo;
 
